@@ -1,0 +1,287 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Title},
+  pdfauthor={Last Name, First Name},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Title}
+\author{Last Name, First Name\footnote{Student ID, \href{https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE}{Github Repo}}}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Write your abstract here.
+\end{abstract}
+
+\hypertarget{important-information-about-midterm}{%
+\section{Important Information About Midterm}\label{important-information-about-midterm}}
+
+\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 37 IN THIS FILE!}
+
+\textbf{Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.}
+
+\textbf{You must upload your project folder (\texttt{YourStudentID.zip} file) to \emph{ekampus.ankara.edu.tr} until 9 June 2023, 23:59.}
+
+\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. \textbf{Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.} For example, you can refer to Aydınonat (\protect\hyperlink{ref-aydinonat:2007}{2007}) for academic writing rules. You can find lots of online resources on this topic.
+
+The sections in your project assignment should definitely include the sections in this text. Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
+
+In this section, mention the purpose and importance of your work in a few paragraphs.
+
+\hypertarget{literature-review}{%
+\subsection{Literature Review}\label{literature-review}}
+
+In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation Chang \& Serletis (\protect\hyperlink{ref-chang:2013}{2013}). This one is a parenthetical citation (\protect\hyperlink{ref-chang:2013}{Chang \& Serletis, 2013}). \textbf{Do not summarize each article individually under a separate title.} In the literature review section, \textbf{at least six} articles must be cited (\protect\hyperlink{ref-newbold:2003}{Newbold et al., 2003}; \protect\hyperlink{ref-verzani:2014}{Verzani, 2014}; \protect\hyperlink{ref-wickham:2014}{Wickham, 2014}; \protect\hyperlink{ref-wooldridge:2015a}{Wooldridge, 2015}).
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+The data set as a source was a base for examining a kind of relationship between subjects of our study. In order to achieve this, the data was obtained from World Trade Organization and it has \ldots. observations with \ldots{} variables. The observations were determined among 59 countries and each variable displays character or numerical value such as types of exportation products and years. To discuss it with a visual framework, the layout of the data set was shaped regarding the proper position of tidy sets and each variable has their own columns. In the next part, these values were analysed by applying method of correlation analysis and we came to the conclusion which highlightes a relationship between the development level of countries and their amount of products to export. First of all, a table was created to understand main frame of variables. The table below demonstrates mean, standard deviation, minimum and maximum values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(here)}
+\NormalTok{survey }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\FunctionTok{here}\NormalTok{(}\StringTok{"data/survey.csv"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+Note that code options are edited in some of the code chunks in the Rmd file.
+
+With the \texttt{echo=FALSE} option, prevent the codes from appearing in the derived pdf file and report your results in tables.
+
+\begin{table}[ht]
+\centering
+\caption{Summary Statistics} 
+\label{tab:summary}
+\begin{tabular}{lccccc}
+  \toprule
+ & Mean & Std.Dev & Min & Median & Max \\ 
+  \midrule
+credits & 5.01 & 0.60 & 4.00 & 5.00 & 6.50 \\ 
+  handedness & 0.66 & 0.41 & -0.88 & 0.73 & 1.00 \\ 
+  handspan & 20.60 & 2.18 & 14.00 & 20.50 & 27.00 \\ 
+  height & 67.55 & 4.44 & 58.00 & 67.00 & 78.00 \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{methods-and-data-analysis}{%
+\section{Methods and Data Analysis}\label{methods-and-data-analysis}}
+
+In this section describe the methods that you use to achieve the purpose of the study. You should use the appropriate analysis methods (such as hypothesis tests and correlation analysis) that we covered in the class. If you want, you can also use other methods that we haven't covered. If you think some method is more suitable for the purpose of the analysis and the data set, you can use that method (\protect\hyperlink{ref-newbold:2003}{Newbold et al., 2003}; \protect\hyperlink{ref-verzani:2014}{Verzani, 2014}; \protect\hyperlink{ref-wickham:2014}{Wickham, 2014}; \protect\hyperlink{ref-wooldridge:2015a}{Wooldridge, 2015}).
+
+For example, if you are performing regression analysis, discuss your predicted equation in this section. Write your equations and mathematical expressions using \(LaTeX\).
+
+\[
+Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
+\]
+
+This section should also include different tables and plots. You can add histograms, scatter plots (such as Figure \ref{fig:plot}), box plots, etc. Make the necessary references to your figures as shown in the previous sentence.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{survey }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ handedness, }\AttributeTok{y =}\NormalTok{ handspan)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{geom\_smooth}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{scale\_x\_continuous}\NormalTok{(}\StringTok{"Handedness"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{scale\_y\_continuous}\NormalTok{(}\StringTok{"Handspan"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics{final_files/figure-latex/plot-1} 
+
+}
+
+\caption{An Awesome Plot}\label{fig:plot}
+\end{figure}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Summarize the results of your analysis in this section. Discuss to what extent your results responded to the research question you identified at the beginning and how this work could be improved in the future.
+
+\textbf{References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.}
+
+\textbf{\emph{You shouldn't delete the last 3 lines. Those lines are required for References section.}}
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-aydinonat:2007}{}}%
+Aydınonat, N. E. (2007). \emph{İktisat öğrencileri için ödev yazma kılavuzu}. \url{http://iktisat.cu.edu.tr/tr/Belgeler/Formlar/Bitirme\%20Projesi\%20Ödev\%20Hazırlama\%20Rehberi/N.\%20Emrah\%20AYDINONAT\%20(2006)\%20Ödev\%20Rehberi.pdf}
+
+\leavevmode\vadjust pre{\hypertarget{ref-chang:2013}{}}%
+Chang, D., \& Serletis, A. (2013). The demand for gasoline: Evidence from household survey data. \emph{Journal of Applied Econometrics}, \emph{29}(2), 291--313.
+
+\leavevmode\vadjust pre{\hypertarget{ref-newbold:2003}{}}%
+Newbold, P., Carlson, W. L., \& Thorne, B. (2003). \emph{Statistics for business and economics}. Pearson College Division.
+
+\leavevmode\vadjust pre{\hypertarget{ref-verzani:2014}{}}%
+Verzani, J. (2014). \emph{Using {R} for introductory statistics}. CRC Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wickham:2014}{}}%
+Wickham, H. (2014). \emph{Advanced {R}}. CRC Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wooldridge:2015a}{}}%
+Wooldridge, J. M. (2015). Control function methods in applied econometrics. \emph{Journal of Human Resources}, \emph{50}(2), 420--445.
+
+\end{CSLReferences}
+
+\end{document}

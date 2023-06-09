@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "Determinants of Exportation Types"
 author: 
-  - Last Name, First Name[^1]
+  - Filiz, Simge[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa.csl
 header-includes:
@@ -24,8 +24,9 @@ link-citations: yes
 urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
-abstract: |
-    Write your abstract here.
+abstract: |Determinants of Exportation Types
+This study has been created in order to find the positive or negative relationship between exportation and some certain factors. Regarding that releasing relation, my hyphothesis focuses on technological development and claims its obvious influence on the types of industry groups on exportation. To support that thesis,a correlation test was applied on selected products which are related to technologic levels of their own groups as being mid-tech and high-tech industries groups. In the result of that, the developed and developing countries, which are selected as sample, shows a different orientation regarding the technologic interest of them. So, the positive relationship that is supporting our hypothesis has occured and these result can have important roles in order to determine the way of countries' export share.
+    
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -34,53 +35,41 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== FOOTNOTES ============================== -->
 <!-- ======================================================================= -->
-[^1]: Student ID, [Github Repo](https://github.com/YOUR_USER_NAME_HERE/YOUR_REPO_NAME_HERE)
-
-# Important Information About Midterm
-
-\colorbox{BurntOrange}{WRITE YOUR GITHUB REPO LINK ON LINE 37 IN THIS FILE!}
-
-**Project Proposal submisson will be done by uploading a zip file to the ekampus system along with the Github repo link. If you do not upload a zip file to the system and do not provide a Github repo link, you will be deemed not to have entered the midterm and final exams.**
-
-**You must upload your project folder (`YourStudentID.zip` file) to *ekampus.ankara.edu.tr* until 9 June 2023, 23:59.**
-
-\colorbox{WildStrawberry}{Read the README.md file in the project folder for more information.}
+[^1]: 20080483, [Github Repo](https://github.com/simgefiliz/Final.git)
 
 # Introduction
-This outline has been created to assist you in writing your project assignment. You should cite all the sources you use, articles, presentations, projects, etc. Quoting and referencing gives readers the opportunity to access the resources you refer. **Even though you use your own words, if you are conveying the ideas of others in your work, you have to document the source of these ideas. Otherwise, you are committing academic plagiarism.** For example, you can refer to @aydinonat:2007 for academic writing rules. You can find lots of online resources on this topic.
-
-The sections in your project assignment should definitely include the sections in this text. Apart from the sections used here, you can use different subsections. When writing your project, use this file as a draft and adapt its content to your purposes.
-
-In this section, mention the purpose and importance of your work in a few paragraphs.
+The relationship between growing status of countries and their trade facilities has been subject to many research. There can be found several determinants which directs that connection. To be more specific, exportation goods in a sector can be leveled or diversified regarding the passing years and the technological development of a country. In that sense, this study aims to reveal the effects of these factors and focus on one of them by analysing it in the methods and data analysis.  As a source, the data set was obtained from World Trade Organization and it has 59 countries’ observations with 12 variables in a period between 1990 and 2016. Most of the variables were categorized as representing the types of exportation products. To illuminate our results 6 different articles were examined and their graphs were demonstrated in following parts.
 
 ## Literature Review
+One of the subgroups of globalization called exportation has gradual types of diffusion all around the world. The reasons for that distinction of goods’ qualities and values are the main purpose of our analysis and the answer for the research question. When we try to detail them through the articles and graphics that will be mentioned, it could be seen that there are several prominent factors such as the technological development of a country. Their effects create specific markets for every region on the process of exportation. 
+To make clear these effects we will view the articles in a way of coming closer which ends with an example regarding the technological movements. Our first article gives us an example about the basic positive relationship between the productivity and the export variety. In figure 7, Japan has %50 more export variety than South Korea [@Feenstra:2004; @Kee:2004]. However, with the narrowing gap in productivity among them, the variety of Korea’s exportation starts to rise. When we look at our second article, the variety, or new products of a country is not taken into consideration as a main trigger for the export grown [@Zahler:2007]. Instead, a connection between new destinations for actual products and exportation growth has been created in the Table 1. From another research, we can deduce that agricultural safety standards of countries play an important role on determination of exports. For that, 4 main output structure are visualized in a bar chart by using the data collected from the countries that have 3 different kinds of socioeconomic status. These output structures of agriculture, processed foods, manufacturing and other goods exist in industrial, low-income and middle-income countries. According to that “Agriculture represents less than 2 percent of output for industrial countries and 10.5 percent for developing countries, while processed foods represent 4.5 percent for industrial countries and 7.5 percent for developing countries. Agriculture is still a relatively high 19 percent of output in the low-income developing countries.” [@Aksoy:2005; @Beghin:2005]. Those ratios are explained with a dependency of countries to food safety. While low-income countries’ importation is built on protected goods such as grains, their exportation has a tendency for less or no protected items. Next article offers another connection which argues that industrial analysis of a country’s exportation is suggestive to decide whether it is an industrial society or not. With the scale of Turkey, manufacturing industry forms the biggest part of that global trade between the years of 2000 and 2015 in the graph 2 [@Yenisu:2018]. That industry includes automotive, textile and ready-made clothing sectors and it can be easily said that Turkey is still an industrializing country even though mining and fuels exports has increased about 13.3 times. Eventually, this cause-and-effect relationship will be valid for the other countries.
+When we went into detail and focused on the main determinant of our study, the next report and article contextualizes the technological improvement in years and its effect on the amount of the exportation in the manufacturing industry. In the Figure 5, first article demonstrates that export share of low-tech industries group in 1990, which is the dominant industry, has a share about 60% [@Saracoglu:2018]. Then, it shows a decreasing tendency until 2008 and ends up with %34 in 2017. On the other hand, the mid-low-tech and mid-high-tech industries groups, which started with 20%, reached a level of 30% export share. The last article has a proper table to look through those graded industries groups in the selected countries. However, different policies like specialization and product differentiation of that countries do not offer a one-to-one relationship between technological development and high-tech product exportation. In Figure 2, when we look at mid-tech industries Mexico, Brazil and South Korea show themselves as prominent countries. Also, high-tech products are concentrated in Singapore, Philippines and Malaysia because of MNC export-oriented operations [@Lall:2000]. In relation to that, the high-tech exportation facility of South Korea and Taiwan takes place with emphasis on domestic technological inputs and competence and these inputs are expected to be sold by MNC’s. So, more complex products that are transformed from inputs can be related with domestic technological development in an indirect way.
 
-In this section, discuss the articles you have read on the subject by giving references. This is a narrative citation @chang:2013. This one is a parenthetical citation [@chang:2013]. **Do not summarize each article individually under a separate title.** In the literature review section, **at least six** articles must be cited [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
 
 # Data
-In this section, discuss the source of the data set you use in your study, if you have done any operation on the raw data, these operations and the summary statistics about the data set. In this section, it is mandatory to have a table (Table \ref{tab:summary}) containing summary statistics (mean, standard deviation, minimum, maximum, etc. values) of all variables. Make the necessary references to your tables as shown in the previous sentence [@perkins:1991].
-
-R codes for the analysis should start in this section. In this section, you should include the codes that imports the data set into R and the codes that generate summary statistics.
+The data set as a source was a base for examining a kind of relationship between subjects of our study. In order to achieve this, the data was obtained from World Trade Organization and it has …. observations with 12 variables. The observations were determined among 59 countries and each variable displays character or double values such as types of exportation products and years.Exportation products vary in 10 groups and diffuse in the years between 1990 and 2016. To discuss it with a visual framework, the layout of the data set was shaped regarding the proper position of tidy sets and each variable has their own columns. In the next part, these values were analysed by applying method of correlation analysis and we came to the conclusion which highlights a relationship between the development level of countries and their amount of products to export. First of all, a table was created to understand main frame of variables. The table below demonstrates mean, standard deviation, minimum and maximum values. 
 
 ```{r}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("data/survey.csv"))
+DataWto5 <- read_xlsx(here("data/DataWto5.xlsx"))
 ```
 
-Note that code options are edited in some of the code chunks in the Rmd file.
+
 
 ```{r, echo=FALSE}
 library(xtable) 
 library(summarytools)
+library(magrittr)
+library(dplyr)
 st_options(lang = "en")
 ```
 
-With the `echo=FALSE` option, prevent the codes from appearing in the derived pdf file and report your results in tables.
+
 
 ```{r results='asis', echo=FALSE}
-survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+DataWto5 %>%
+  select("Agricultural products", "Food", "Fuels and mining products", "Fuels", "Manufactures", "Iron and steel", "Chemicals", "Machinery and transport equipment", "Textiles", "Clothing") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Summary Statistics",
          label = "tab:summary",
@@ -90,35 +79,69 @@ survey %>%
 
 
 # Methods and Data Analysis
-In this section describe the methods that you use to achieve the purpose of the study. You should use the appropriate analysis methods (such as hypothesis tests and correlation analysis) that we covered in the class. If you want, you can also use other methods that we haven't covered. If you think some method is more suitable for the purpose of the analysis and the data set, you can use that method [@newbold:2003; @verzani:2014; @wickham:2014; @wooldridge:2015a].
+In order to put an emphasis on the differentiation of exportation regarding technological condition, 2 variables of each country as years and mid-tech, low-tech industries groups were selected. These groups include chemicals and textiles industries and Pearson correlation analysis were used to release the relationship between passing years which reacts to technology and the exportation share of a selected industry group. Turkey as a developing country and the United States of America with the developed status were chosen from the data set to be sample in this study. 
+In the framework of Turkey, chemicals as mid-tech industries were analyzed in the years between 1990 and 2016. That analysis was showed in the correlation test below.
+ 
+ 
+```{r}
+library(ggplot2)
+library("ggpubr")
+library("dplyr")
 
-For example, if you are performing regression analysis, discuss your predicted equation in this section. Write your equations and mathematical expressions using $LaTeX$.
+DataWto5 <- read_xlsx(here("data/DataWto5.xlsx"))
+DataWto5$Chemicals <- as.numeric(DataWto5$Chemicals)
 
-$$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
-$$
+DataWto5 <- read_xlsx(here("data/DataWto5.xlsx"))
+DataWto5$Textiles <- as.numeric(DataWto5$Textiles)
 
-This section should also include different tables and plots. You can add histograms, scatter plots (such as Figure \@ref(fig:plot)), box plots, etc. Make the necessary references to your figures as shown in the previous sentence.
+filter(DataWto5, Chemicals > 80 & Textiles > 120) %>%
+  filter(Country == 'Turkey') 
 
 
-```{r plot, fig.align='center', fig.cap='An Awesome Plot'}
-survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
-  geom_point() +
-  geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  ggscatter(DataWto5,
+            x = 'Chemicals',
+            y = 'Textiles',
+            add = 'reg.line',
+            add.params = list(color = 'blue'),
+            conf.int = FALSE,
+            cor.coef = TRUE,
+            cor.coef.coord = c(25, 5),
+            cor.method = 'pearson',
+            ggtheme = theme_minimal())
+  
+
+
 ```
+
+When we look at the test, we can understand the type and size of the relation of variables by the blue line that was created on our graph. The correlation between 2 product groups are generally limited under 7 thousand of Chemicals and 1,5 thousand of Textiles.In that limited period, it can be said that there is a positive correlation between them. However, after that point, their correlation has been corrupted and they display small positive level of correlation with the increasing amount of the scale. This is the point where textiles started to climb up more than chemicals' ratio. So, when we try to interpret that, exportation share of mid-tech and low-tech industries are increasing together in that country, but mid-tech industry keeps its slow rise compared to low-tech one. In that case, technological interest of a country can be regarded as a factor in that amounts.
+
+```{r}
+
+
+DataWto5 %>% filter(Country == 'United States of America') 
+DataWto5 %>% filter(Country == 'Turkey')
+
+ 
+
+```
+
+When we look at the 2 selected countries from the data set, Turkey showed a similar attitude with the general correlation of these targeted products. However, it is obvious that the USA put more weighted interest on chemicals industry which is mid-tech group.
 
 
 # Conclusion
-Summarize the results of your analysis in this section. Discuss to what extent your results responded to the research question you identified at the beginning and how this work could be improved in the future.
 
-**References section is created automatically by Rmarkdown. There is no need to change the references section in the draft file.**
+To sum, in our study we examined several determinants of exportation facility. The most predominant one in that analysis was technological relationship among them. Even some articles suggest that the policies and specialization factors have great influence in export share, our data analysis has put a claim the presence of some countries' interest on higher-tech industries groups. Also, until a some point countries can maintain  different kind of industries in exportation without giving up from one of them. These can be regarded as minor points of that factors to illuminate reasons behind the subject.
 
 **_You shouldn't delete the last 3 lines. Those lines are required for References section._**
 
 \newpage
 # References {#references}
+Feenstra, Kee. 2004. “Export Variety and Country Productivity”.  NBER Working Paper Series.
+Zahler, Andres. 2007. “Decomposing world export growth and the relevance of new destinations”. Munich Personal RePEc Archive.
+Aksoy, Beghin. 2005. “Global Agricultural Trade and Developing Countries”. The World Bank.
+Yenisu, Ersin. 2018. “Export, Import and Economic Growth Relationship In Turkey: ARDL Bound Testing Approach”. GAUN JSS.
+Lall, Sanjaya.2000. "The Technological Structure and Performance of Developing Country
+Manufactured Exports, 1985-1998".Queen Elizabeth House, University of Oxford.
+Saraçoğlu, Dürdane. 2018. "Üretim ve Dış Ticaret İlişkisi". T.C. Kalkınma Bakanlığı.
 <div id="refs"></div>
 
